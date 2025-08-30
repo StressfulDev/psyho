@@ -1,0 +1,9 @@
+.home-container {
+  margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .home-container {
+    overflow-x: hidden;
+  }
+}

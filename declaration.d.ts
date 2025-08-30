@@ -1,0 +1,13 @@
+declare module "*.css";
+declare module "*.svg";
+declare module "*.png";
+declare module "*.scss";
+declare module "*.module.css";
+declare module "*.mp3";
+declare module "*.js";
+declare module "*.jsx";
+declare module "*.ts";
+declare module "*.tsx";
+declare module "react-tiff";
+declare module "react-draggable";
+declare module "lodash.debounce";

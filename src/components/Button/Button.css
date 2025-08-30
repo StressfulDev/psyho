@@ -1,0 +1,50 @@
+.custom-btn {
+  position: relative; /* Для позиционирования ripple */
+  padding: 12px 30px;
+  border: 1px solid #C69D6F;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: #C69D6F;
+  transition: all linear 0.2s;
+  overflow: hidden; /* Скрываем выходящие за границы элемента части ripple */
+  --ripple-x: 0;
+  --ripple-y: 0;
+}
+
+.custom-btn:hover {
+  background-color: #d2a87d;
+  border: 1px solid #d2a87d;
+}
+
+.custom-btn:active {
+  background-color: #bd9463;
+  border: 1px solid #bd9463;
+}
+
+/* Стили для ripple эффекта */
+.custom-btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Цвет ряби */
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  left: var(--ripple-x); /* Позиция по X */
+  top: var(--ripple-y); /* Позиция по Y */
+}
+
+/* Активация ripple при клике */
+.custom-btn.ripple-active::after {
+  width: 200px; /* Размер ряби */
+  height: 200px;
+  opacity: .5;
+}
+
+ .btn-text {
+   font-size: 15px;
+   text-decoration: underline;
+ }

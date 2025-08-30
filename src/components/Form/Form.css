@@ -1,0 +1,147 @@
+.form-block {
+
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 17px;
+  padding: 16px 27px;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(180deg, #5200FF 0%, #6372FF 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  resize: none;
+}
+
+.form-input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+textarea.form-input {
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.form-button {
+  align-self: flex-start;
+  padding: 16px 64px;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.form-button:disabled {
+  border: none;
+  box-shadow: none;
+}
+
+@media (max-width: 1350px) {
+
+}
+
+@media (max-height: 1310px) {
+
+}
+
+@media (max-height: 1270px) {
+
+}
+
+@media (max-height: 1170px) {
+
+}
+
+@media (max-width: 1120px) {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 985px) {
+  .form-button {
+    align-self: center;
+  }
+}
+
+@media (max-height: 900px) and (orientation: landscape) {
+
+}
+
+@media only screen and (max-width: 1120px) and (orientation: landscape) {
+
+}
+
+@media (max-width: 908px) {
+}
+
+@media only screen and (max-width: 890px) and (orientation: landscape) {
+}
+
+@media (max-width: 890px) {
+}
+
+@media (max-width: 810px) {
+
+}
+
+@media (max-width: 770px) {
+  .form-button {
+    padding-left: 60px!important;
+    padding-right: 60px!important;
+  }
+}
+
+@media (max-width: 744px) {
+
+}
+
+@media (max-width: 693px) {
+}
+
+@media (max-width: 675px) {
+}
+
+@media (max-width: 650px) {
+}
+
+@media (max-width: 630px) {
+}
+
+@media (max-width: 579px) {
+}
+
+@media (max-width: 545px) {
+}
+
+@media (max-width: 533px) {
+}
+
+@media (max-width: 465px) {
+
+}
+
+@media (max-width: 433px) {
+}
+
+@media (max-width: 396px) {
+}
+
+@media (max-width: 360px) {
+}

@@ -1,0 +1,39 @@
+.burger-icon {
+  transition: transform 0.3s ease;
+}
+
+.burger-icon:hover {
+  transform: scale(1.1);
+}
+
+.burger-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger-icon-svg line {
+  stroke: #282830;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: all 0.3s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Анимация крестика */
+.burger-icon-svg.open .top {
+  transform: rotate(44deg) translateY(11px);
+}
+
+.burger-icon-svg.open .middle {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.burger-icon-svg.open .bottom {
+  transform: rotate(-44deg) translateY(-11px);
+}

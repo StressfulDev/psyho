@@ -1,0 +1,13 @@
+<svg width="29" height="33" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Монитор -->
+    <rect x="6" y="8" width="56" height="38" rx="3" fill="#404040"/>
+
+    <!-- Три белых аккуратных сердца по центру -->
+    <path d="M16.5 26C15.3 26 14.3 27 14.3 28.2C14.3 30.3 17.8 32.2 17.8 32.2C17.8 32.2 21.3 30.3 21.3 28.2C21.3 27 20.3 26 19.1 26C18.5 26 17.9 26.3 17.5 26.8C17.1 26.3 16.8 26 16.5 26Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 26C30.8 26 29.8 27 29.8 28.2C29.8 30.3 33.3 32.2 33.3 32.2C33.3 32.2 36.8 30.3 36.8 28.2C36.8 27 35.8 26 34.6 26C34 26 33.4 26.3 33 26.8C32.6 26.3 32.3 26 32 26Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47.5 26C46.3 26 45.3 27 45.3 28.2C45.3 30.3 48.8 32.2 48.8 32.2C48.8 32.2 52.3 30.3 52.3 28.2C52.3 27 51.3 26 50.1 26C49.5 26 48.9 26.3 48.5 26.8C48.1 26.3 47.8 26 47.5 26Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Подставка -->
+    <rect x="28" y="47" width="8" height="4" rx="1" fill="#404040"/>
+    <rect x="20" y="52" width="24" height="4" rx="2" fill="#404040"/>
+</svg>

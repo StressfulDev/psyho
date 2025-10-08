@@ -1,0 +1,18 @@
+<svg width="29" height="33" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Монитор -->
+    <rect x="5" y="8" width="56" height="38" rx="3" fill="#404040"/>
+
+    <!-- Верхний ряд из трёх белых сердец -->
+    <path d="M16.5 20C15.3 20 14.3 21 14.3 22.2C14.3 24.3 17.8 26.2 17.8 26.2C17.8 26.2 21.3 24.3 21.3 22.2C21.3 21 20.3 20 19.1 20C18.5 20 17.9 20.3 17.5 20.8C17.1 20.3 16.8 20 16.5 20Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 20C30.8 20 29.8 21 29.8 22.2C29.8 24.3 33.3 26.2 33.3 26.2C33.3 26.2 36.8 24.3 36.8 22.2C36.8 21 35.8 20 34.6 20C34 20 33.4 20.3 33 20.8C32.6 20.3 32.3 20 32 20Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47.5 20C46.3 20 45.3 21 45.3 22.2C45.3 24.3 48.8 26.2 48.8 26.2C48.8 26.2 52.3 24.3 52.3 22.2C52.3 21 51.3 20 50.1 20C49.5 20 48.9 20.3 48.5 20.8C48.1 20.3 47.8 20 47.5 20Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Нижний ряд из трёх белых сердец -->
+    <path d="M16.5 30C15.3 30 14.3 31 14.3 32.2C14.3 34.3 17.8 36.2 17.8 36.2C17.8 36.2 21.3 34.3 21.3 32.2C21.3 31 20.3 30 19.1 30C18.5 30 17.9 30.3 17.5 30.8C17.1 30.3 16.8 30 16.5 30Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 30C30.8 30 29.8 31 29.8 32.2C29.8 34.3 33.3 36.2 33.3 36.2C33.3 36.2 36.8 34.3 36.8 32.2C36.8 31 35.8 30 34.6 30C34 30 33.4 30.3 33 30.8C32.6 30.3 32.3 30 32 30Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47.5 30C46.3 30 45.3 31 45.3 32.2C45.3 34.3 48.8 36.2 48.8 36.2C48.8 36.2 52.3 34.3 52.3 32.2C52.3 31 51.3 30 50.1 30C49.5 30 48.9 30.3 48.5 30.8C48.1 30.3 47.8 30 47.5 30Z" fill="white" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Подставка -->
+    <rect x="28" y="47" width="8" height="4" rx="2" fill="#404040"/>
+    <rect x="20" y="52" width="24" height="4" rx="2" fill="#404040"/>
+</svg>

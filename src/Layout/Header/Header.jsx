@@ -13,7 +13,8 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
 
   const isMobile = useIsMobile(); // по умолчанию 650px
 
-  const handleLogoClick = () => {
+  const handleLogoClick = (e) => {
+    e.preventDefault();
     setIsPulsing(true);
     setTimeout(() => setIsPulsing(false), 800);
   };
@@ -24,7 +25,12 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
 
   const renderHeaderLinks = () => linksList?.map(({id, value}) => (
     <li key={id}>
-      <a href={`#${id}`} onClick={(e) => scrollByClick(id, undefined, e)} className="header-list-item">
+      <a
+        href={`#${id}`}
+        onClick={(e) => scrollByClick(id, undefined, e)}
+        className="header-list-item"
+        aria-current={window.location.hash === `#${id}` ? "true" : undefined}
+      >
         {value}
       </a>
     </li>
@@ -32,14 +38,16 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
 
   return (
     <header className="header" role="banner">
-      <img
-        src={img}
-        alt="Логотип психолога Полины Малышевой"
-        className={`header-logo ${isPulsing ? 'pulse' : ''}`}
-        onClick={handleLogoClick}
-      />
+      <a href="/" onClick={handleLogoClick}>
+        <img
+          src={img}
+          alt="Логотип психолога Полины Малышевой"
+          className={`header-logo ${isPulsing ? 'pulse' : ''}`}
+          onClick={handleLogoClick}
+        />
+      </a>
       {!isMobile && (
-        <nav>
+        <nav aria-label="Основная навигация по разделам сайта">
           <ul className="header-list">
             {renderHeaderLinks()}
           </ul>
@@ -54,7 +62,15 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
             ariaLabel="Записаться на консультацию у психолога"
             title="Записаться на консультацию у психолога"
           />
-        ) : <BurgerIcon isOpen={isBurgerMenuOpen} onClick={toggleBurgerMenu}/>
+        ) : (
+          <BurgerIcon
+            isOpen={isBurgerMenuOpen}
+            onClick={toggleBurgerMenu}
+            aria-label="Меню навигации"
+            aria-expanded={isBurgerMenuOpen}
+            aria-controls="mobile-menu"
+          />
+        )
       }
     </header>
   );

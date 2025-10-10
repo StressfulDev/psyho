@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {RouterProvider} from "react-router";
 import {createBrowserRouter} from "react-router-dom";
+import {HelmetProvider} from "react-helmet-async";
 import "./index.css";
 
 import Home from "./pages/Home/Home";
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <HelmetProvider>
+      <RouterProvider router={router}/>
+    </HelmetProvider>
   </React.StrictMode>
 );

@@ -35,6 +35,11 @@ const Reviews = () => {
 
   return (
     <section id="reviews" className="reviews">
+
+      <meta itemProp="name" content="Полина Малышева" />
+      <meta itemProp="jobTitle" content="Психолог онлайн" />
+      <meta itemProp="url" content="https://psypolinam.ru" />
+
       <CircleBg className="reviews-bg-img" aria-hidden="true"/>
       <h2 className="reviews-header">Отзывы</h2>
       <div className="reviews-slider-container">

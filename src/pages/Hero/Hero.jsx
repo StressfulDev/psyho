@@ -14,6 +14,13 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
 
   return (
     <section id="hero" className="hero" itemScope itemType="https://schema.org/Person">
+
+      <meta itemProp="name" content="Полина Малышева" />
+      <meta itemProp="jobTitle" content="Психолог онлайн" />
+      <meta itemProp="url" content="https://psypolinam.ru" />
+      <meta itemProp="email" content="info@psypolinam.ru" />
+      <meta itemProp="telephone" content="+79110372311" />
+
       <HeroMobileMenu isBurgerMenuOpen={isBurgerMenuOpen} setIsBurgerMenuOpen={setIsBurgerMenuOpen}/>
       <div className="hero-container">
         <div className="hero-block">
@@ -28,7 +35,13 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
             title="Посмотреть отзывы клиентов"
           />
         </div>
-        <img src={polinaBg} alt="Психолог Полина Малышева" className="hero-polina-bg" itemProp="image"/>
+        <img
+          src={polinaBg}
+          alt="Психолог Онлайн Полина Малышева"
+          className="hero-polina-bg"
+          itemProp="image"
+          loading="eager"
+        />
         <BackgroundLargeImg className="hero-large-bg" aria-hidden="true"/>
       </div>
       <BackgroundSmallImg className="hero-small-bg" aria-hidden="true"/>

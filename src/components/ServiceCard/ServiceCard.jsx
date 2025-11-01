@@ -14,11 +14,12 @@ const ServiceCard = ({ img: ImgComponent, text, subtext, number, header }) => {
   };
 
   return (
-    <div
+    <article
       key={number}
       itemScope
       itemType="https://schema.org/Service"
       className="service-card"
+      itemProp="itemListElement"
       onMouseMove={handleMouseMove}
       ref={cardRef}
       style={{
@@ -27,32 +28,41 @@ const ServiceCard = ({ img: ImgComponent, text, subtext, number, header }) => {
       }}
     >
       <meta itemProp="serviceType" content={header} />
-      <meta itemProp="provider" content="Полина Малышева – психолог" />
       <span className="service-card_number">{number}</span>
 
-      <ImgComponent className="service-card_img" aria-hidden="true"/>
+      <ImgComponent className="service-card_img" aria-hidden="true" itemProp="image"/>
 
       <h3 className="service-card_header" itemProp="name">{header}</h3>
 
       <div>
-        <span className="service-card_text">
+        <span className="service-card_text" itemProp="description">
           {text}
         </span>
-        <span className="service-card_text">
+        <span className="service-card_text" itemProp="description">
           {subtext}
         </span>
       </div>
+
+      <div itemProp="provider" itemScope itemType="https://schema.org/Person">
+        <meta itemProp="name" content="Полина Малышева" />
+        <meta itemProp="jobTitle" content="Психолог" />
+        <meta itemProp="url" content="https://psypolinam.ru" />
+      </div>
+
       <span
         className="service-card_subtext"
         onClick={handleTelegramClick}
         itemProp="potentialAction"
         itemScope
         itemType="https://schema.org/ReserveAction"
+        role="button"
+        aria-label="Записаться на консультацию"
       >
+        <meta itemProp="name" content="Запись на консультацию психолога онлайн" />
         <meta itemProp="target" content="https://t.me/polinagordi" />
         Записаться
       </span>
-    </div>
+    </article>
   );
 };
 

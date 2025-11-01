@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-96x96.png" sizes="96x96" />
@@ -23,19 +22,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Психолог ОНЛАЙН – Полина Малышева. Онлайн-консультации для взрослых. Помощь при тревоге, стрессах, проблемах в отношениях и самооценке." />
-    <meta name="title" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
-    <meta property="og:site_name" content="Психолог – Полина Малышева" />
+    <meta property="og:site_name" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
+    <meta property="og:locale" content="ru_RU" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Психолог – Полина Малышева" />
+    <meta property="og:title" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
     <meta property="og:description" content="Онлайн-консультации. Помощь при тревоге, стрессе, проблемах в отношениях и самооценке." />
     <meta property="og:url" content="https://psypolinam.ru/" />
     <meta property="og:image" content="https://psypolinam.ru/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Психолог – Полина Малышева" />
+    <meta name="twitter:title" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
     <meta name="twitter:description" content="Онлайн-помощь при тревоге, стрессах и жизненных трудностях" />
     <meta name="twitter:image" content="https://psypolinam.ru/og-image.jpg" />
     <meta name="yandex-verification" content="2080f7863152dfd6" />
     <meta name="google-site-verification" content="1yZwq2WSHmUORng2k7iPtwe7OxXGlMhWK_YVYJMMLhs" />
+    <meta name="robots" content="index, follow" />
 
     <title>Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе</title>
 
@@ -43,11 +43,16 @@
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Психолог Полина Малышева",
+        "name": "Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе",
         "url": "https://psypolinam.ru",
         "logo": "https://psypolinam.ru/logo.webp",
         "email": "info@psypolinam.ru",
         "telephone": "+7-911-037-23-11",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://psypolinam.ru/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
         "founder": {
           "@type": "Person",
           "name": "Полина Малышева",

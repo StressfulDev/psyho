@@ -13,13 +13,21 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
   };
 
   return (
-    <section id="hero" className="hero" itemScope itemType="https://schema.org/Person">
+    <section
+      id="hero"
+      className="hero"
+      itemScope
+      itemType="https://schema.org/Person"
+      aria-label="Главный раздел — психолог онлайн Полина Малышева"
+    >
 
       <meta itemProp="name" content="Полина Малышева" />
       <meta itemProp="jobTitle" content="Психолог онлайн" />
       <meta itemProp="url" content="https://psypolinam.ru" />
       <meta itemProp="email" content="info@psypolinam.ru" />
       <meta itemProp="telephone" content="+79110372311" />
+      <meta itemProp="address" content="Россия, Санкт-Петербург" />
+      <meta itemProp="worksFor" content="Частная практика психолога онлайн" />
 
       <HeroMobileMenu isBurgerMenuOpen={isBurgerMenuOpen} setIsBurgerMenuOpen={setIsBurgerMenuOpen}/>
       <div className="hero-container">
@@ -42,9 +50,26 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
           itemProp="image"
           loading="eager"
         />
-        <BackgroundLargeImg className="hero-large-bg" aria-hidden="true"/>
+        <BackgroundLargeImg className="hero-large-bg" aria-hidden="true" loading="lazy"/>
       </div>
-      <BackgroundSmallImg className="hero-small-bg" aria-hidden="true"/>
+      <BackgroundSmallImg className="hero-small-bg" aria-hidden="true" loading="lazy"/>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Полина Малышева",
+          jobTitle: "Психолог онлайн",
+          url: "https://psypolinam.ru",
+          email: "info@psypolinam.ru",
+          telephone: "+79110372311",
+          sameAs: [
+            "https://t.me/polinagordi",
+            "https://www.instagram.com/psypolinam", // если есть
+          ],
+          image: "https://psypolinam.ru/hero.webp"
+        })}
+      </script>
     </section>
   )
 }

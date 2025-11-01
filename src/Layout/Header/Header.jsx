@@ -29,7 +29,7 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
         href={`#${id}`}
         onClick={(e) => scrollByClick(id, undefined, e)}
         className="header-list-item"
-        aria-current={window.location.hash === `#${id}` ? "true" : undefined}
+        aria-current={window.location.hash === `#${id}` ? "page" : undefined}
       >
         {value}
       </a>
@@ -37,17 +37,37 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
   ));
 
   return (
-    <header className="header" role="banner">
-      <a href="/" onClick={handleLogoClick}>
+    <header
+      className="header"
+      role="banner"
+      itemScope
+      itemType="https://schema.org/Organization"
+    >
+      <meta itemProp="name" content="Полина Малышева" />
+      <meta itemProp="jobTitle" content="Психолог" />
+      <a
+        href="/"
+        onClick={handleLogoClick}
+        itemProp="url"
+        aria-label="Главная страница сайта психолога Полины Малышевой"
+      >
         <img
           src={img}
           alt="Логотип психолога Полины Малышевой"
           className={`header-logo ${isPulsing ? 'pulse' : ''}`}
           onClick={handleLogoClick}
+          itemProp="logo"
+          width="100"
+          height="100"
         />
       </a>
       {!isMobile && (
-        <nav aria-label="Основная навигация по разделам сайта">
+        <nav
+          aria-label="Основная навигация по разделам сайта"
+          itemProp="hasPart"
+          itemScope
+          itemType="https://schema.org/SiteNavigationElement"
+        >
           <ul className="header-list">
             {renderHeaderLinks()}
           </ul>

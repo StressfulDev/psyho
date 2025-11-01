@@ -14,7 +14,7 @@ const Home = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Психолог Онлайн Полина Малышева",
+    "name": "Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе",
     "jobTitle": "Психолог, консультант",
     "description": "Психолог Онлайн Полина Малышева — помощь при тревоге, стрессах, выгорании. Консультации онлайн.",
     "url": "https://psypolinam.ru",
@@ -35,7 +35,11 @@ const Home = () => {
     <div className="home-container">
       <Helmet>
         {/* Базовая SEO-информация */}
-        <title>Психолог Онлайн Полина Малышева — консультации онлайн.</title>
+        <title>Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе</title>
+        <meta
+          name="title"
+          content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе"
+        />
         <meta
           name="description"
           content="Психолог Онлайн Полина Малышева помогает преодолеть тревогу, стресс, выгорание, кризисы. Консультации онлайн."
@@ -48,13 +52,13 @@ const Home = () => {
         {/* Open Graph (для соцсетей) */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://psypolinam.ru" />
-        <meta property="og:title" content="Психолог Онлайн Полина Малышева" />
+        <meta property="og:title" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
         <meta property="og:description" content="Консультации психолога онлайн." />
         <meta property="og:image" content="https://psypolinam.ru/og-preview.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Психолог Онлайн Полина Малышева" />
+        <meta name="twitter:title" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
         <meta name="twitter:description" content="Психологическая помощь онлайн." />
         <meta name="twitter:image" content="https://psypolinam.ru/og-preview.jpg" />
 

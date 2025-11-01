@@ -8,6 +8,7 @@ import {ReactComponent as BackgroundSmallImg} from "../../assets/svg/background_
 import "./Reviews.css";
 import "swiper/css";
 import "swiper/css/navigation";
+import {Helmet} from "react-helmet-async";
 
 const chunkArray = (arr, chunkSize) => {
   const chunks = [];
@@ -36,12 +37,26 @@ const Reviews = () => {
   return (
     <section id="reviews" className="reviews">
 
-      <meta itemProp="name" content="Полина Малышева" />
-      <meta itemProp="jobTitle" content="Психолог онлайн" />
-      <meta itemProp="url" content="https://psypolinam.ru" />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AggregateRating",
+            "itemReviewed": {
+              "@type": "Person",
+              "name": "Полина Малышева"
+            },
+            "ratingValue": "5",
+            "reviewCount": "30"
+          })}
+        </script>
+      </Helmet>
+
+      <meta itemProp="name" content="Отзывы клиентов о психологе Полине Малышевой" />
+      <meta itemProp="url" content="https://psypolinam.ru#reviews" />
 
       <CircleBg className="reviews-bg-img" aria-hidden="true"/>
-      <h2 className="reviews-header">Отзывы</h2>
+      <h2 className="reviews-header" itemProp="headline">Отзывы</h2>
       <div className="reviews-slider-container">
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -55,7 +70,7 @@ const Reviews = () => {
           role="region"
         >
           {groupedReviews.map((group, index) => (
-            <SwiperSlide autoplay key={index}>
+            <SwiperSlide key={index}>
               <div className="review-slide-group">
                 {group.map(({text, header}, i) => (
                   <ReviewCard key={i} text={text} header={header}/>

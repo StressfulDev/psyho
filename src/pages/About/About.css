@@ -7,7 +7,7 @@
 
 .about-block {
   position: relative;
-  margin-right: 165px;
+  margin-right: 100px;
 }
 
 .about-bg-img {
@@ -18,9 +18,8 @@
 
 .about-img {
   align-self: center;
-  max-width: 334px;
+  max-width: 500px;
   width: 100%;
-  max-height: 500px;
 }
 
 .about-header {
@@ -57,6 +56,59 @@
   justify-content: space-between;
 }
 
+.about-collapse-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease,
+  opacity 0.3s ease,
+  padding 0.3s ease;
+}
+
+.about-collapse-content.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.about-collapse-header {
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.collapse-icon {
+  margin-left: 8px;
+  stroke: #333;
+  stroke-width: 2;
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.collapse-icon line {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.collapse-icon.open .vertical {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 @media (max-width: 950px) {
   .about-block {
     margin-right: 50px;
@@ -75,7 +127,7 @@
   }
 
   .about-img {
-    align-self: flex-start;
+    align-self: center;
     margin-bottom: 70px;
   }
 }

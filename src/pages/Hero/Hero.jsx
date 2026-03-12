@@ -33,7 +33,7 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
       <div className="hero-container">
         <div className="hero-block">
           <h1 className="hero-header" itemProp="name">Полина Малышева</h1>
-          <h2 className="hero-subheader" itemProp="jobTitle">Психолог ОНЛАЙН</h2>
+          <p className="hero-subheader" itemProp="jobTitle">Психолог ОНЛАЙН</p>
           <span className="hero-descr" itemProp="description">Рада приветствовать Вас на моём сайте!</span>
           <Button
             text="Ваше мнение"
@@ -53,23 +53,6 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
         <BackgroundLargeImg className="hero-large-bg" aria-hidden="true" loading="lazy"/>
       </div>
       <BackgroundSmallImg className="hero-small-bg" aria-hidden="true" loading="lazy"/>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Полина Малышева",
-          jobTitle: "Психолог онлайн",
-          url: "https://psypolinam.ru",
-          email: "info@psypolinam.ru",
-          telephone: "+79110372311",
-          sameAs: [
-            "https://t.me/polinagordi",
-            "https://www.instagram.com/psypolinam", // если есть
-          ],
-          image: "https://psypolinam.ru/hero.webp"
-        })}
-      </script>
     </section>
   )
 }

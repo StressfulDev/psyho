@@ -4,6 +4,4 @@ Allow: /
 Host: psypolinam.ru
 Sitemap: https://psypolinam.ru/sitemap.xml
 
-Disallow: /static/
-Disallow: /assets/
 Disallow: /admin/

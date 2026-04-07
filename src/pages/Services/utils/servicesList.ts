@@ -1,7 +1,5 @@
 import { ReactComponent as Pc } from "../../../assets/svg/pc.svg";
 import { ReactComponent as Phone } from "../../../assets/svg/phone.svg";
-import { ReactComponent as ServicePackageThree } from "../../../assets/svg/servicePackageThree.svg";
-import { ReactComponent as ServicePackageSix } from "../../../assets/svg/servicePackageSix.svg";
 
 export const servicesList = [
   {
@@ -13,7 +11,7 @@ export const servicesList = [
   },
   {
     img: Pc,
-    text: "Встреча\u00A0длится 75\u00A0минут.",
+    text: "Встреча\u00A0длится 90\u00A0минут.",
     subtext: "Стоимость:\u00A04\u00A0000р.",
     number: "02",
     header: "Семейная\u00A0терапия",

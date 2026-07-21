@@ -1,7 +1,23 @@
+# https://psypolinam.ru/robots.txt
 User-agent: *
 Allow: /
-
-Host: psypolinam.ru
-Sitemap: https://psypolinam.ru/sitemap.xml
-
 Disallow: /admin/
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+
+Host: https://psypolinam.ru
+Sitemap: https://psypolinam.ru/sitemap.xml

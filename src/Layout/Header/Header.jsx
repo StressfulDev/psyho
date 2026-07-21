@@ -43,17 +43,18 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
       itemScope
       itemType="https://schema.org/Organization"
     >
-      <meta itemProp="name" content="Полина Малышева" />
-      <meta itemProp="jobTitle" content="Психолог" />
+      <meta itemProp="name" content="Полина Малышева — психолог и семейный психолог онлайн" />
+      <meta itemProp="description" content="Онлайн-консультации психолога и семейного психолога" />
+      <meta itemProp="url" content="https://psypolinam.ru" />
       <a
         href="/"
         onClick={handleLogoClick}
         itemProp="url"
-        aria-label="Главная страница сайта психолога Полины Малышевой"
+        aria-label="Главная страница сайта психолога и семейного психолога Полины Малышевой"
       >
         <img
           src={img}
-          alt="Логотип психолога Полины Малышевой"
+          alt="Логотип психолога и семейного психолога Полины Малышевой"
           className={`header-logo ${isPulsing ? 'pulse' : ''}`}
           onClick={handleLogoClick}
           itemProp="logo"
@@ -79,8 +80,8 @@ const Header = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
             text="Записаться на консультацию"
             isLinkText
             onClick={handleTelegramClick}
-            ariaLabel="Записаться на консультацию у психолога"
-            title="Записаться на консультацию у психолога"
+            ariaLabel="Записаться на онлайн-консультацию к психологу"
+            title="Записаться на онлайн-консультацию к психологу"
           />
         ) : (
           <BurgerIcon

@@ -21,15 +21,15 @@ const About = () => {
     <section
       id="about"
       className="about"
-      aria-label="Информация о психологе Полине Малышевой"
+      aria-label="Информация о психологе и семейном психологе Полине Малышевой"
       itemScope
       itemType="https://schema.org/Person"
     >
 
       <meta itemProp="name" content="Полина Малышева" />
-      <meta itemProp="jobTitle" content="Психолог онлайн" />
+      <meta itemProp="jobTitle" content="Клинический психолог, семейный психолог онлайн" />
       <meta itemProp="url" content="https://psypolinam.ru" />
-      <meta itemProp="hasOccupation" content="Психолог-консультант, клинический психолог" />
+      <meta itemProp="hasOccupation" content="Психолог-консультант, клинический психолог, семейный психолог" />
       <meta itemProp="knowsLanguage" content="Русский" />
 
       <div className="about-block">
@@ -38,7 +38,7 @@ const About = () => {
           Обо мне
         </h2>
         <p className="about-descr" itemProp="description">
-          {"Доброго времени суток! Меня зовут Полина, мне 31 год и я практикующий клинический психолог."}
+          {"Доброго времени суток! Меня зовут Полина, мне 31 год и я практикующий клинический психолог и семейный психолог."}
           <br/>
           {"Помогаю навести порядок в мыслях, прожить сложные чувства и выстроить жизнь, в которой вам по-настоящему хорошо и комфортно."}
           <br/>
@@ -193,7 +193,7 @@ const About = () => {
       </div>
       <img
         src={aboutImg}
-        alt="Психолог Полина Малышева на консультации"
+        alt="Семейный психолог Полина Малышева на онлайн-консультации"
         className="about-img"
         loading="lazy"
         itemProp="image"

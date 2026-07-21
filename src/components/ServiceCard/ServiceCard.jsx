@@ -45,7 +45,7 @@ const ServiceCard = ({ img: ImgComponent, text, subtext, number, header }) => {
 
       <div itemProp="provider" itemScope itemType="https://schema.org/Person">
         <meta itemProp="name" content="Полина Малышева" />
-        <meta itemProp="jobTitle" content="Психолог" />
+        <meta itemProp="jobTitle" content="Психолог и семейный психолог" />
         <meta itemProp="url" content="https://psypolinam.ru" />
       </div>
 

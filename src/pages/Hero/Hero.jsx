@@ -18,23 +18,23 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
       className="hero"
       itemScope
       itemType="https://schema.org/Person"
-      aria-label="Главный раздел — психолог онлайн Полина Малышева"
+      aria-label="Главный раздел — психолог и семейный психолог онлайн Полина Малышева"
     >
 
       <meta itemProp="name" content="Полина Малышева" />
-      <meta itemProp="jobTitle" content="Психолог онлайн" />
+      <meta itemProp="jobTitle" content="Психолог и семейный психолог онлайн" />
       <meta itemProp="url" content="https://psypolinam.ru" />
       <meta itemProp="email" content="info@psypolinam.ru" />
       <meta itemProp="telephone" content="+79110372311" />
       <meta itemProp="address" content="Россия, Санкт-Петербург" />
-      <meta itemProp="worksFor" content="Частная практика психолога онлайн" />
+      <meta itemProp="worksFor" content="Частная практика психолога и семейного психолога онлайн" />
 
       <HeroMobileMenu isBurgerMenuOpen={isBurgerMenuOpen} setIsBurgerMenuOpen={setIsBurgerMenuOpen}/>
       <div className="hero-container">
         <div className="hero-block">
           <h1 className="hero-header" itemProp="name">Полина Малышева</h1>
           <p className="hero-subheader" itemProp="jobTitle">Психолог ОНЛАЙН</p>
-          <span className="hero-descr" itemProp="description">Рада приветствовать Вас на моём сайте!</span>
+          <span className="hero-descr" itemProp="description">Онлайн-консультации психолога и семейного психолога. Рада приветствовать Вас!</span>
           <Button
             text="Ваше мнение"
             className="hero-btn"
@@ -45,7 +45,7 @@ const Hero = ({isBurgerMenuOpen, setIsBurgerMenuOpen}) => {
         </div>
         <img
           src={polinaBg}
-          alt="Психолог Онлайн Полина Малышева"
+          alt="Полина Малышева — психолог и семейный психолог, онлайн-консультации"
           className="hero-polina-bg"
           itemProp="image"
           loading="eager"

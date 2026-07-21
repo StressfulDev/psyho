@@ -41,13 +41,16 @@ const Reviews = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "AggregateRating",
-            "itemReviewed": {
-              "@type": "Person",
-              "name": "Полина Малышева"
-            },
-            "ratingValue": "5",
-            "reviewCount": "30"
+            "@type": "LocalBusiness",
+            "name": "Полина Малышева — психолог и семейный психолог онлайн",
+            "url": "https://psypolinam.ru",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "bestRating": "5",
+              "worstRating": "1",
+              "reviewCount": String(reviewsList.length)
+            }
           })}
         </script>
       </Helmet>

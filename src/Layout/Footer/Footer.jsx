@@ -25,12 +25,13 @@ const Footer = () => {
       className="footer"
       itemScope
       itemType="https://schema.org/Organization"
-      aria-label="Контактная информация и ссылки Полины Малышевой, психолога онлайн"
+      aria-label="Контактная информация психолога и семейного психолога Полины Малышевой"
     >
-      <meta itemProp="name" content="Психолог ОНЛАЙН – Полина Малышева, помощь при тревоге и стрессе" />
+      <meta itemProp="name" content="Полина Малышева — психолог и семейный психолог онлайн" />
       <meta itemProp="url" content="https://psypolinam.ru" />
       <meta itemProp="address" content="Россия, Санкт-Петербург" />
       <meta itemProp="founder" content="Полина Малышева" />
+      <meta itemProp="description" content="Онлайн-консультации психолога и семейного психолога: индивидуальные встречи и семейная терапия" />
 
       <div className="footer-header__container">
         <h2 className="footer-header">
@@ -110,7 +111,7 @@ const Footer = () => {
           >
             <img
               src={img}
-              alt="Логотип Полины Малышевой"
+              alt="Логотип психолога Полины Малышевой"
               className="footer-logo"
               itemProp="logo"
               loading="lazy"
@@ -119,28 +120,6 @@ const Footer = () => {
         </div>
       </div>
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Психолог ОНЛАЙН – Полина Малышева",
-          url: "https://psypolinam.ru",
-          logo: "https://psypolinam.ru/logo.webp",
-          email: "info@psypolinam.ru",
-          telephone: "+79110372311",
-          sameAs: [
-            "https://t.me/polinagordi",
-            "https://wa.me/79110372311"
-          ],
-          contactPoint: {
-            "@type": "ContactPoint",
-            telephone: "+79110372311",
-            contactType: "Customer Support",
-            areaServed: "RU",
-            availableLanguage: ["Russian"]
-          }
-        })}
-      </script>
     </footer>
   )
 }

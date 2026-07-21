@@ -28,22 +28,31 @@ const Services = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "OfferCatalog",
-            "name": "Услуги психолога Полины Малышевой",
-            "itemListElement": servicesList.map(({ header, subtext }) => ({
-              "@type": "Service",
-              "name": header,
-              "description": subtext,
-              "provider": {
-                "@type": "Person",
-                "name": "Полина Малышева"
+            "name": "Услуги психолога и семейного психолога Полины Малышевой",
+            "description": "Онлайн-консультации психолога и семейная терапия",
+            "url": "https://psypolinam.ru/#services",
+            "itemListElement": servicesList.map(({ header, text, subtext }, index) => ({
+              "@type": "Offer",
+              "position": index + 1,
+              "itemOffered": {
+                "@type": "Service",
+                "name": `${header.replace(/\u00A0/g, " ")} онлайн`,
+                "description": `${text.replace(/\u00A0/g, " ")} ${subtext.replace(/\u00A0/g, " ")}. Формат: онлайн-встреча с психологом.`,
+                "provider": {
+                  "@type": "Person",
+                  "name": "Полина Малышева",
+                  "jobTitle": "Психолог и семейный психолог"
+                },
+                "serviceType": "Online",
+                "areaServed": "RU"
               }
             }))
           })}
         </script>
       </Helmet>
 
-      <meta itemProp="name" content="Услуги психолога Полины Малышевой" />
-      <meta itemProp="url" content="https://psypolinam.ru#services" />
+      <meta itemProp="name" content="Услуги психолога и семейного психолога Полины Малышевой" />
+      <meta itemProp="url" content="https://psypolinam.ru/#services" />
 
       <CircleBg className="services-bg-img" aria-hidden="true"/>
       <h2 className="services-header" itemProp="name">
